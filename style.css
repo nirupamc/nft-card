@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Outfit:wght@300;400;600&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root {
+    --bg1: hsl(215, 51%, 70%);
+    --bg2: hsl(178, 100%, 50%);
+    --main-bg: hsl(217, 54%, 11%);
+    --card-bg: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body{
+    background-color:var(--main-bg);
+    font-family:  'Outfit', sans-serif;
+    font-size: 18px;
+    color:hsl(0, 0%, 100% ,65%);
+    padding: 1.3rem;
+}
+.card{
+    padding: 1.3rem;
+    background-color: var(--card-bg);
+    border-radius: 3%;
+
+}
+.card h2{
+    color: var(--white);
+    margin: 1rem 0.5rem 0.5rem 0;
+}
+.card ul{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--line);
+}
+.card ul li{
+    display: flex;
+    align-items:center;
+}
+.card ul li img{
+    margin-right: 0.5rem;
+}
+.mainImg{
+    border-radius: 10px;
+}
+
+.main-image-container{
+    position: relative;
+
+}
+.main-image-container div{
+    position:absolute;
+    top:0;
+    background-color: hsl(178, 100%, 50% , 50%);
+    width:100%;
+    height:98.5%;
+    z-index: 999;
+    border-radius: 10px;
+    opacity: 0
+
+}
+.main-image-container div:hover{
+    opacity: 1;
+    cursor: pointer;
+    transition:0.3s ease-in-out;
+}
+
+.view{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%)
+}
+
+
+
+
+.eth{
+    color:var(--bg2)
+}
+p{
+    font-weight: 300;
+}
+img{
+    max-width:100%
+}
+ul{
+    list-style: none
+}
+.card .creator{
+    display: flex;
+    align-items:center;
+    justify-content:start;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+.card .creator img{
+width: 3.5rem;
+border-radius:50%;
+border: 1.5px solid var(--white);
+margin-right: 1rem;
+
+}
+
+.card .creator p span{
+    font-weight: 450px;
+    color:var(--white);
+}
+
+
+
+
+.attribution { 
+    font-size: 16px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+.card .creator p span:hover{
+    color:var(--bg2);
+    cursor: pointer;
+}
+
+.main-text:hover{
+cursor: pointer;
+color: var(--bg2);
+}
+
+@media (min-width:500px){
+    .card{
+        width:450px;
+        margin: 0 auto 1rem;
+    }
+}
